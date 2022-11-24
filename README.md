@@ -44,15 +44,11 @@ Mengedit file ```main.dart```
 ```Navigator.pushReplacement``` = ketika tombol kembali di-tap maka activity sebelumnya dihilangkan.
 
 ## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
-```FloatingActionButton``` widget--dalam kasus ini berupa tombol icon--yang 'mengambang' (floating) dan digunakan untuk mempromosikan tindakan atau menambahkan sesuatu pada halaman aplikasi
-
 ```Padding``` untuk membuat padding/space kosong antara widget
 
 ```Row``` untuk alignment agar sejajar secara horizontal
 
 ```Text``` untuk menampikan teks
-
-```Visibility``` untuk mengeset terlihat atau tidaknya widget
 
 ```TextButton``` untuk membuat button berbentuk teks
 
