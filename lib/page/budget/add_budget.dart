@@ -1,9 +1,9 @@
-import 'globals.dart' as globals;
+import '../../globals.dart' as globals;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:counter_7/main.dart';
-import 'package:counter_7/drawer.dart';
-import 'package:counter_7/showdata_budget.dart';
+import 'package:counter_7/page/drawer.dart';
+import 'package:counter_7/page/budget/showdata_budget.dart';
 
 class AddBudget extends StatefulWidget {
   const AddBudget({super.key});

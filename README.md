@@ -76,3 +76,29 @@ Mengedit file ```main.dart```
 3. Membuat file ```add_budget.dart``` yang berisi form
 4. Membuat file ```globals.dart``` yang berisi global variabel
 5. Membuat file ```showdata_budget.dart``` untuk menampilkan data
+
+# Tugas 9: Integrasi Web Service pada Flutter
+
+##  Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+```Navigator.push``` = digunakan untuk berpindah dari activity pertama ke activity kedua, dan ketika saat activity kedua kita menekan tombol back maka akan dialihkan ke activity pertama (tidak menghilangkan screen sebelumnya). 
+```Navigator.pushReplacement``` = ketika tombol kembali di-tap maka activity sebelumnya dihilangkan.
+
+## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+```CheckBox``` untuk membuat checkbox dengan event onChange yang akan terpanggil setiap kali terdapat perubahan value, misalnya ketika diklik.
+
+```FutureBuilder``` untuk mendapatkan status dari proses yang sedang kita jalankan dengan mudah
+
+```List Tile``` untuk membentuk sebuah list dan terdapat juga widget widget didalamnya.
+
+```TextButton``` untuk membuat button berbentuk teks
+
+## Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter
+Data diambil menggunakan HTTP, oleh karena itu ditambahkan dulu dependensi HTTP. Kemudian, akan dibuat model sesuai JSON yang akan diambil. Lalu, akan dilakukan HTTP request dengan method GET. Response akan diubah menjadi JSON lalu diubah menjadi model yang telah dibuat.
+Response didecode menjadi JSON kemudian dikonversi menjadi model yang dibuat. Lalu, untuk menampilkan data dimanfaatkan FutureBuilder yang akan mereturn ListView builder yang membuat ListTile berisi data yang telah dimapping yang diambil dari fungsi fetchwatchlist.
+
+## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+1. Membuat file ```mywatchlist.dart``` pada folder model
+2. Membuat file ```fetch_watchlist.dart``` dan membuat fungsi Future
+3. Membuat file ```my_watchlist.dart``` dan menambahkan FutureBuilder serta ```my_watchlist_detail.dart```
+4. Membuat Checkbox widget
+

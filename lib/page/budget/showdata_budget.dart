@@ -1,8 +1,8 @@
-import 'globals.dart' as globals;
+import '../../globals.dart' as globals;
 import 'package:flutter/material.dart';
 import 'package:counter_7/main.dart';
-import 'package:counter_7/add_budget.dart';
-import 'package:counter_7/drawer.dart';
+import 'package:counter_7/page/budget/add_budget.dart';
+import 'package:counter_7/page/drawer.dart';
 
 class DataBudgetPage extends StatefulWidget {
   const DataBudgetPage({super.key});
