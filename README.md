@@ -96,5 +96,5 @@ Response didecode menjadi JSON kemudian dikonversi menjadi model yang dibuat. La
 1. Membuat file ```mywatchlist.dart``` pada folder model
 2. Membuat file ```fetch_watchlist.dart``` dan membuat fungsi Future
 3. Membuat file ```my_watchlist.dart``` dan menambahkan FutureBuilder serta ```my_watchlist_detail.dart```
-4. Membuat Checkbox widget
+4. Membuat Checkbox widget untuk implementasi bonus
 
