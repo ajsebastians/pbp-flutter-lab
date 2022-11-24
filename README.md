@@ -76,8 +76,7 @@ Mengedit file ```main.dart```
 # Tugas 9: Integrasi Web Service pada Flutter
 
 ##  Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
-```Navigator.push``` = digunakan untuk berpindah dari activity pertama ke activity kedua, dan ketika saat activity kedua kita menekan tombol back maka akan dialihkan ke activity pertama (tidak menghilangkan screen sebelumnya). 
-```Navigator.pushReplacement``` = ketika tombol kembali di-tap maka activity sebelumnya dihilangkan.
+Bisa, Kita dapat melakukan pengambilan data JSON tersebut dalam bentuk http response dalam bentuk raw data. Namun, hal ini kurang direkomendasikan. Untuk mempermudah, sebaiknya kita harus membuat model yang berfungsi untuk menampung data JSON sehingga operasi pada data tersebut dapat dilakukan dengan lebih mudah.
 
 ## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
 ```CheckBox``` untuk membuat checkbox dengan event onChange yang akan terpanggil setiap kali terdapat perubahan value, misalnya ketika diklik.
